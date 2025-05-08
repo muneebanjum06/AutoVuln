@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoVuln - Web Vulnerability Scanner</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-brand">AutoVuln</div>
+        <div class="nav-links">
+            <a href="#" class="nav-link active" id="scanLink"><i class="fas fa-search"></i> Scan</a>
+            <a href="#" class="nav-link" id="reportsLink"><i class="fas fa-file-alt"></i> Reports</a>
+            <a href="#" class="nav-link" id="aboutLink"><i class="fas fa-info-circle"></i> About</a>
+        </div>
+    </nav>
+
+    <div class="content-wrapper" id="scanSection">
+        <div class="scan-container">
+            <h1>Web Vulnerability Scanner</h1>
+            <p>Enter a website URL below to scan for common vulnerabilities.</p>
+            <div class="input-container">
+                <input type="text" id="urlInput" placeholder="https://example.com">
+            </div>
+            <button class="scan-button" onclick="startScan()">
+                <i class="fas fa-search"></i> Start Scan
+            </button>
+            <div id="loader" class="loader" style="display: none;"></div>
+            <div id="scanStatus" class="scan-status" style="display: none;"></div>
+        </div>
+    </div>
+
+    <div class="content-wrapper" id="reportsSection" style="display: none;">
+        <h1>Security Reports</h1>
+        <div id="reportsList" class="reports-list">
+            <!-- Reports will be listed here -->
+        </div>
+    </div>
+
+    <!-- About Modal -->
+    <div class="about-modal" id="aboutModal">
+        <div class="about-content">
+            <button class="about-close" id="aboutClose">&times;</button>
+            <h2 class="about-title"><i class="fas fa-info-circle"></i> About AutoVuln</h2>
+            <p class="about-text">
+                AutoVuln is a professional web vulnerability scanner designed to help developers 
+                and security professionals identify security risks in web applications. Our scanner 
+                analyzes HTML forms for common vulnerabilities and provides actionable recommendations.
+            </p>
+            
+            <div class="about-features">
+                <h3><i class="fas fa-shield-alt"></i> Key Features</h3>
+                <ul>
+                    <li>Comprehensive form vulnerability scanning</li>
+                    <li>Detailed security reports with risk assessment</li>
+                    <li>Clear remediation guidance for identified issues</li>
+                    <li>Secure local storage of scan results</li>
+                    <li>User-friendly interface with professional reporting</li>
+                </ul>
+            </div>
+            
+            <div class="about-footer">
+                <p>Version 1.0 | Secure your web applications with confidence</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
