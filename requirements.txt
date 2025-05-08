@@ -1,1 +1,0 @@
-fpdf beautifulsoup4 flask flask-cors requests fonttools
