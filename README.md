@@ -4,6 +4,23 @@
 
 ---
 
+## 🚀 Getting Started
+
+---
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/yourusername/AutoVuln.git
+cd AutoVuln
+```
+### 2. API key
+Add your api key of any AI you want in the *config.py* (I have used deepseek)
+### 3. API URL
+Add your api url of any URL you want in the *config.py* (I have used deepseek)
+
+---
+
 ## ✨ Key Features
 
 - 🤖 **AI-Driven Analysis** – Uses DeepSeek AI to interpret form logic and identify vulnerabilities
@@ -35,16 +52,4 @@
 
 ---
 
-## 🚀 Getting Started
-
-### 1. Clone the Repository
-
-```bash
-git clone https://github.com/yourusername/AutoVuln.git
-cd AutoVuln
-```
-### 2. API key
-Add your api key of any AI you want in the *config.py* (I have used deepseek)
-### 3. API URL
-Add your api url of any URL you want in the *config.py* (I have used deepseek)
 
