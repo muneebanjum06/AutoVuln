@@ -17,7 +17,7 @@ cd AutoVuln
 ### 2. API key
 Add your api key of any AI you want in the *config.py* (I have used deepseek)
 ### 3. API URL
-Add your api url of any URL you want in the *config.py* (I have used deepseek)
+Add your api url in the *config.py* (I have used deepseek)
 
 ---
 
